@@ -9,11 +9,16 @@
     }
   ],
   "require": {
-    "php-di/php-di": "^6.0"
+    "php-di/php-di": "^6.0",
+    "monolog/monolog": "^1.24",
+    "vlucas/phpdotenv": "^2.5"
   },
   "autoload": {
     "psr-4": {
       "WPDevAutoThumb\\": "app/"
     }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^3.4"
   }
 }

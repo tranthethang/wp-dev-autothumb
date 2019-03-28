@@ -20,7 +20,27 @@
  * @package WP Dev AutoThumb
  */
 
-$autoload = plugin_dir_path( 'vendor/autoload.php' );
-if ( file_exists( $autoload ) ) {
-	require_once $autoload;
+define( 'WDA_DIR_PATH', plugin_dir_path( __FILE__ ) );
+
+$autoload = WDA_DIR_PATH . '/vendor/autoload.php';
+
+if ( ! file_exists( $autoload ) ) {
+	return;
 }
+require_once $autoload;
+
+\WPDevAutoThumb\Bootstrap::getInstance();
+
+
+//try {
+//	$container = $containerBuilder->build();
+//
+//	/** @var \Silence\App $app */
+//	$app = $container->get( \Silence\Contract\IApp::class );
+//	$app->boot();
+//} catch ( \Exception $exception ) {
+//	var_dump( $exception );
+//	die();
+//}
+
+
