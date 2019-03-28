@@ -30,17 +30,3 @@ if ( ! file_exists( $autoload ) ) {
 require_once $autoload;
 
 \WPDevAutoThumb\Bootstrap::getInstance();
-
-
-//try {
-//	$container = $containerBuilder->build();
-//
-//	/** @var \Silence\App $app */
-//	$app = $container->get( \Silence\Contract\IApp::class );
-//	$app->boot();
-//} catch ( \Exception $exception ) {
-//	var_dump( $exception );
-//	die();
-//}
-
-

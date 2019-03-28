@@ -7,6 +7,7 @@ use \WPDevAutoThumb\Traits\Singleton;
 final class Container {
 	use Singleton;
 
+	/** @var \DI\Container */
 	private $_container;
 
 	/**
@@ -24,8 +25,15 @@ final class Container {
 		}
 	}
 
-	public function resolve( $abstract = '' ) {
-
+	/**
+	 * @param string $abstract
+	 *
+	 * @return mixed
+	 * @throws \DI\DependencyException
+	 * @throws \DI\NotFoundException
+	 */
+	public function get( $abstract = '' ) {
+		return $this->_container->get( $abstract );
 	}
 
 	public function getContainer() {
