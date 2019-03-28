@@ -28,15 +28,12 @@ final class Container {
 	/**
 	 * @param string $abstract
 	 *
-	 * @return mixed
 	 * @throws \DI\DependencyException
 	 * @throws \DI\NotFoundException
+	 *
+	 * @return mixed
 	 */
 	public function get( $abstract = '' ) {
 		return $this->_container->get( $abstract );
-	}
-
-	public function getContainer() {
-		return $this->_container;
 	}
 }
