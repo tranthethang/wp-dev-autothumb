@@ -1,14 +1,19 @@
 {
-    "name": "thangtt/wp-dev-autothumb",
-    "description": "Grab images from multi gallery.",
-    "type": "project",
-    "authors": [
-        {
-            "name": "tranthethang",
-            "email": "tranthethang@gmail.com"
-        }
-    ],
-    "require": {
-        "php-di/php-di": "^6.0"
+  "name": "tranthethang/wp-dev-autothumb",
+  "description": "Grab images from multi gallery.",
+  "type": "project",
+  "authors": [
+    {
+      "name": "tranthethang",
+      "email": "tranthethang@gmail.com"
     }
+  ],
+  "require": {
+    "php-di/php-di": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "WPDevAutoThumb\\": "app/"
+    }
+  }
 }

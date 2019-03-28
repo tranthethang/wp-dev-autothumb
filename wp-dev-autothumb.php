@@ -19,3 +19,8 @@
  *
  * @package WP Dev AutoThumb
  */
+
+$autoload = plugin_dir_path( 'vendor/autoload.php' );
+if ( file_exists( $autoload ) ) {
+	require_once $autoload;
+}
