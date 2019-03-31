@@ -11,7 +11,8 @@
   "require": {
     "php-di/php-di": "^6.0",
     "monolog/monolog": "^1.24",
-    "vlucas/phpdotenv": "^2.5"
+    "vlucas/phpdotenv": "^2.5",
+    "unsplash/unsplash": "^2.4"
   },
   "autoload": {
     "psr-4": {
