@@ -23,8 +23,9 @@
 define( 'WDA_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
 $autoload = WDA_DIR_PATH . '/vendor/autoload.php';
+$env      = WDA_DIR_PATH . '/.env';
 
-if ( ! file_exists( $autoload ) ) {
+if ( ! file_exists( $autoload ) || ! file_exists( $env ) ) {
 	return;
 }
 require_once $autoload;

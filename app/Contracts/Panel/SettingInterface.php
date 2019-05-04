@@ -2,6 +2,6 @@
 
 namespace WPDevAutoThumb\Contracts\Panel;
 
-interface GalleryInterface {
+interface SettingInterface {
 
 }
